@@ -48,22 +48,75 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .soldout {
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  top: 55%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  white-space: nowrap;
+  font-weight: 700;
+  padding:5px;
+  padding-top: 40px;
+  font-size: 1.1rem;
+  color: #151513;
 
-  left: 65%;
-
-width:130px;
-  font-size: 11pt;
   text-align: left;
-  color: #1b1d24;
 }
 
 .soldout>span>p{
+  width:160px;
   white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+}
+
+
+
+@media (max-width: 1025px) {
+  .soldout{
+    font-size: 1rem;
+ 
+  }
+  .soldout>span>p{
+    width:180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media (max-width:769px) {
+  .soldout{
+    font-size: 0.8rem;
+    left: 50%;
+  }
+  .soldout>span>p{
+    width:150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media (max-width: 500px) {
+  .soldout{
+    font-size: 1rem;
+    left: 50%;
+  }
+  .soldout>span>p{
+    width:160px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media (max-width: 400px) {
+  .soldout{
+    font-size:1rem;
+    left:50%;
+  }
+  .soldout>span>p{
+    width:160px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 
